@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -17,9 +17,20 @@ export const metadata: Metadata = {
   description: "Static solar monitoring dashboard demo",
   icons: {
     icon: "/favicon.ico",
+    apple: "/icons/icon-192x192.png",
+    shortcut: "/icons/icon-192x192.png",
   },
-  // themeColor: "#000000",
+  // themeColor: "#020617",
+
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black",
+  },
   manifest: "/manifest.json",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#020617",
 };
 
 export default function RootLayout({
@@ -30,15 +41,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="hydrated">
         {/* PWA manifest & icons */}
-      <head>
+      {/* <head>
         <meta name="theme-color" content="#020617" />
 
         {/* iOS / Apple specific */}
-        <meta name="apple-mobile-web-app-capable" content="yes" />
+        {/* <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-      </head>
+      </head> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

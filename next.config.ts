@@ -11,10 +11,10 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
 
   // If you still have experimental, keep only valid keys
-  experimental: {
-    typedRoutes: true,
-    optimizePackageImports: ["lucide-react"],
-  },
+  typedRoutes: true,
+  // experimental: {
+  //   // optimizePackageImports: ["lucide-react"],
+  // },
 
   // 👇 This line silences that Turbopack warning
   turbopack: {},
