@@ -1,0 +1,17 @@
+{
+  "extends": [
+    "development"
+  ],
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not and_ff <= 144",
+    "not firefox <= 145",
+    "not opera <= 122"
+  ],
+  "hints": {
+    "apple-touch-icons": "off",
+    "typescript-config/consistent-casing": "off",
+    "no-inline-styles": "off"
+  }
+}

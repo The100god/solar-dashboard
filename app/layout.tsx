@@ -28,18 +28,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="hydrated"><head>
+    <html lang="en" className="hydrated">
         {/* PWA manifest & icons */}
-        <link rel="manifest" href="/manifest.json" />
+      <head>
         <meta name="theme-color" content="#020617" />
 
         {/* iOS / Apple specific */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-        <link
-          rel="apple-touch-icon"
-          href="/icons/icon-192x192.png"
-        />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
