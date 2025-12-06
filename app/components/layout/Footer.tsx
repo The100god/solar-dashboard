@@ -8,15 +8,13 @@ const Footer = () => {
         </p>
         <div className="flex flex-col md:flex-row justify-between items-start md:items-start gap-2">
           <div className="mb-1 w-full flex sm:flex-1/4 flex-row sm:flex-col gap-2 rounded-2xl bg-slate-950/60 border border-slate-700 p-3">
-            <span className="font-medium">Email :- </span>
-            <span>
+            <span className="font-medium">Email:-</span>
               <a
                 href="mailto:Info@Greenlaysolarindia.com"
                 className=" hover:text-sky-300"
               >
                 Info@Greenlaysolarindia.com
               </a>
-            </span>
           </div>
 
           <div className="flex w-full sm:flex-1/4 flex-row md:flex-col mb-1 gap-2 rounded-2xl bg-slate-950/60 border border-slate-700 p-3">
