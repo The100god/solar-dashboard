@@ -1,4 +1,4 @@
-☀️ Solar Monitoring Dashboard
+☀️ Greenlay-Solar-India
 
 This is a Solar Monitoring Dashboard built with Next.js and bootstrapped with create-next-app
 .
@@ -154,6 +154,6 @@ for optimized font loading and TailwindCSS for styling.
 
     The app contains a hidden watermark for authorship verification:
 
-    © Solar 2025 — Created by Saurabh Goyal
+    © Greenlay Solar India 2025 — Created by Saurabh Goyal
 
     (This is embedded invisibly in the UI for proof.)

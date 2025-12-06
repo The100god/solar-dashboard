@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-   title: "Solar Dashboard",
+   title: "Greenlay Solar India",
   description: "Static solar monitoring dashboard demo",
   icons: {
     icon: "/favicon.ico",

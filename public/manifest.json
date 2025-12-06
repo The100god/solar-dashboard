@@ -1,6 +1,6 @@
 {
-  "name": "Solar Dashboard",
-  "short_name": "SolarDash",
+  "name": "Greenlay Solar India",
+  "short_name": "greenlay-solar-india",
   "description": "Solar power flow & savings dashboard",
   "start_url": "/",
   "scope": "/",

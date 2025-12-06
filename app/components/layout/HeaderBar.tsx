@@ -23,7 +23,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ live }) => {
         </div>
         <div>
           <h1 className="text-xl md:text-2xl font-semibold">
-            Power Flow Dashboard
+            Greenlay Solar India
           </h1>
           <p className="text-xs md:text-sm text-slate-300">
             Smith Residence • Updated 1 min ago (static demo data)
