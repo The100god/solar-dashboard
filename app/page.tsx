@@ -24,36 +24,34 @@ const SolarDashboardPage: React.FC = () => {
     Math.max(live.toHomeKw + live.toBatteryKw + live.toGridKw, 0.0001);
 
   return (
-    <div className="min-h-screen bg-linear-to-b from-sky-900 via-sky-950 to-slate-950 text-slate-50 flex justify-center px-4 py-6">
-      <div className="w-full max-w-5xl space-y-6">
+    <div className="min-h-screen h-full bg-linear-to-b from-sky-900 via-sky-950 to-slate-950 text-slate-50 flex justify-center px-4 py-6">
+      <div className="w-full relative max-w-5xl space-y-6">
         <HeaderBar live={live} />
-        <DashboardTabs
-          activeTab={activeTab}
-          onTabChange={setActiveTab}
-        />
-    
-{activeTab === "overview" && (
-        <div className="grid gap-5 lg:grid-cols-[3fr,2fr]">
-          <section className="space-y-5">
-            <LiveSolarCard
-              live={live}
-              selfConsumptionPercent={selfConsumptionPercent}
-            />
-            <PowerFlowCard
-              live={live}
-              selfConsumptionPercent={selfConsumptionPercent}
-            />
-            <EnergyChartCard range={range} onRangeChange={setRange} />
-            
-          </section>
+        <DashboardTabs activeTab={activeTab} onTabChange={setActiveTab} />
 
-          <section className="space-y-5">
-            <BatteryCard live={live} />
-            <SelfConsumptionCard selfConsumptionPercent={selfConsumptionPercent} />
-            <SavingsSection savings={MOCK_SAVINGS} />
-            <ContactInfo />
-          </section>
-        </div>
+        {activeTab === "overview" && (
+          <div className="grid gap-5 lg:grid-cols-[3fr,2fr]">
+            <section className="space-y-5">
+              <LiveSolarCard
+                live={live}
+                selfConsumptionPercent={selfConsumptionPercent}
+              />
+              <PowerFlowCard
+                live={live}
+                selfConsumptionPercent={selfConsumptionPercent}
+              />
+              <EnergyChartCard range={range} onRangeChange={setRange} />
+            </section>
+
+            <section className="space-y-5">
+              <BatteryCard live={live} />
+              <SelfConsumptionCard
+                selfConsumptionPercent={selfConsumptionPercent}
+              />
+              <SavingsSection savings={MOCK_SAVINGS} />
+              <ContactInfo />
+            </section>
+          </div>
         )}
         {activeTab === "production" && (
           <div className="space-y-5">
@@ -82,7 +80,9 @@ const SolarDashboardPage: React.FC = () => {
         )}
         {activeTab === "consumption" && (
           <div className="space-y-5">
-            <SelfConsumptionCard selfConsumptionPercent={selfConsumptionPercent} />
+            <SelfConsumptionCard
+              selfConsumptionPercent={selfConsumptionPercent}
+            />
             <ContactInfo />
           </div>
         )}
@@ -100,7 +100,9 @@ const SolarDashboardPage: React.FC = () => {
           </div>
         )}
 
+        <div className="absolute -bottom-6 w-full">
         <Footer />
+        </div>
       </div>
     </div>
   );
