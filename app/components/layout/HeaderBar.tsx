@@ -48,7 +48,7 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ live }) => {
       <div className="flex items-center gap-3">
         <div className="h-10 w-10 shrink-0 rounded-full bg-white border-2 border-sky-950 flex items-center justify-center overflow-hidden p-1">
           <Image
-            src="/logo.png"
+            src="/logo.svg"
             alt="SolarDash logo"
             width={28}
             height={28}
