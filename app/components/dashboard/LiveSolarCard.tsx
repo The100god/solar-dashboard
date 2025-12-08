@@ -58,7 +58,7 @@ const LiveSolarCard: React.FC<LiveSolarCardProps> = ({
           <div className="rounded-2xl bg-slate-900/70 border border-sky-700/60 p-3">
             <p className="text-slate-300">Lifetime</p>
             <p className="mt-1 text-lg font-semibold">32.9 MWh</p>
-            <p className="mt-1 text-[0.7rem] text-slate-400">Since Mar 2021</p>
+            <p className="mt-1 text-[0.7rem] text-slate-400">Since Mar 2024</p>
           </div>
         </div>
       </div>

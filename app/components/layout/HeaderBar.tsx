@@ -50,9 +50,9 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ live }) => {
           <Image
             src="/logo.png"
             alt="SolarDash logo"
-            width={40}
-            height={40}
-            className="object-center rounded-lg"
+            width={28}
+            height={28}
+            className="object-center rounded-t-sm bg-transparent bg-blend-color-dodge"
           />
         </div>
         <div>

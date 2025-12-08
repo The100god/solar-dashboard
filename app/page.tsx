@@ -59,7 +59,7 @@ const SolarDashboardPage: React.FC = () => {
               live={live}
               selfConsumptionPercent={selfConsumptionPercent}
             />
-            <ContactInfo />
+            {/* <ContactInfo /> */}
           </div>
         )}
         {activeTab === "flow" && (
@@ -68,14 +68,14 @@ const SolarDashboardPage: React.FC = () => {
               live={live}
               selfConsumptionPercent={selfConsumptionPercent}
             />
-            <ContactInfo />
+            {/* <ContactInfo /> */}
           </div>
         )}
 
         {activeTab === "battery" && (
           <div className="space-y-5">
             <BatteryCard live={live} />
-            <ContactInfo />
+            {/* <ContactInfo /> */}
           </div>
         )}
         {activeTab === "consumption" && (
@@ -83,7 +83,7 @@ const SolarDashboardPage: React.FC = () => {
             <SelfConsumptionCard
               selfConsumptionPercent={selfConsumptionPercent}
             />
-            <ContactInfo />
+            {/* <ContactInfo /> */}
           </div>
         )}
 
@@ -91,7 +91,7 @@ const SolarDashboardPage: React.FC = () => {
           <div className="space-y-5">
             <SavingsSection savings={MOCK_SAVINGS} />
             <EnergyChartCard range={range} onRangeChange={setRange} />
-            <ContactInfo />
+            {/* <ContactInfo /> */}
           </div>
         )}
         {activeTab === "contact" && (
