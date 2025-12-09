@@ -46,13 +46,13 @@ const HeaderBar: React.FC<HeaderBarProps> = ({ live }) => {
     <header className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
       {/* Left: logo + title */}
       <div className="flex items-center gap-3">
-        <div className="h-10 w-10 shrink-0 rounded-full bg-white border-2 border-sky-950 flex items-center justify-center overflow-hidden p-1">
+        <div className="h-18 w-18 shrink-0 rounded-full bg-white border-2 border-sky-950 flex items-center justify-center overflow-hidden p-1">
           <Image
             src="/logo.svg"
             alt="SolarDash logo"
-            width={28}
-            height={28}
-            className="object-center rounded-t-sm bg-transparent bg-blend-color-dodge"
+            width={55}
+            height={55}
+            className="object-center rounded-t-sm bg-transparent bg-blend-color-dodge -mt-2"
           />
         </div>
         <div>
